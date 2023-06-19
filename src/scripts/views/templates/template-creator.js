@@ -12,7 +12,7 @@ const createRestoItemTemplate = (resto) => `
     </div>
     
     <div class="resto-item__content">
-      <h3><a href="/#/detail/${resto.id}">${resto.name}</a></h3>
+      <h3 class="name"><a href="/#/detail/${resto.id}">${resto.name}</a></h3>
       <p>${resto.description}</p>
     </div>
   </div>

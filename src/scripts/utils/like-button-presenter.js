@@ -2,10 +2,10 @@
 import { createLikeRestaurantButtonTemplate, createUnlikeRestaurantButtonTemplate } from '../views/templates/template-creator';
  
 const LikeButtonPresenter = {
-  async init({ likeButtonContainer, FavoriteRestaurants, resto }) {
+  async init({ likeButtonContainer, favoriteRestaurants, resto }) {
     this._likeButtonContainer = likeButtonContainer;
     this._resto = resto;
-    this._favoriteRestaurants = FavoriteRestaurants;
+    this._favoriteRestaurants = favoriteRestaurants;
  
     await this._renderButton();
   },
