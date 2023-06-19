@@ -1,7 +1,7 @@
 import UrlParser from '../../routes/url-parser';
 import TheRestoDbSource from '../../data/therestodb-source';
 import { createRestoDetailTemplate } from '../templates/template-creator';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonInitiator from '../../utils/like-button-presenter';
 import FavoriteRestoIdb from '../../data/favoriteResto-idb';
 
 const Detail = {
