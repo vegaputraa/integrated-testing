@@ -1,0 +1,127 @@
+@media (min-width: 580px) {
+  /* 
+  main content 
+  */
+
+  .body-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+  }
+ 
+  .detail-header {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+  }
+  .detail-resto-menu .menu{
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  .detail-resto-menu img{
+      height:320px;
+  }
+  .menu .list-menu, .menu .list-drink{
+      width: 48%;
+  }
+  .resto-review-section .resto-review-user {
+      width: 50%;
+  }
+  .restos {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+}
+
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .resto-card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .restos {
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+
+  .restos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .body-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .restos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .body-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .detail-section-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-header {
+      width: 80%;
+      grid-template-columns: 600px 1fr;
+  }
+  .detail-resto-menu h1{
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  .menu .list-menu, .menu .list-drink{
+      width: 30%;
+  }
+
+  .restos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
